@@ -11,7 +11,7 @@ int main(int argc, char* argv[])
 	//INtialze winsock
 	WSADATA wsData;
 	SOCKET listening, ClientSocket;
-	char* message = "Hello\n";
+	char* message = "Hi From the server\n";
 
 	struct sockaddr_in   server, client;
 
@@ -38,7 +38,7 @@ int main(int argc, char* argv[])
 
 	server.sin_family = AF_INET;
 	server.sin_addr.s_addr = INADDR_ANY;
-	server.sin_port = htons(7777);
+	server.sin_port = htons(8888);
 
 	
 
